@@ -1,0 +1,5 @@
+{
+  "name": "PMSM Performance Analyzer",
+  "description": "A professional tool for analyzing Permanent Magnet Synchronous Motor (PMSM) performance. Input motor parameters to generate theoretical Torque-Speed (T-N) and Power-Speed curves using accurate physics-based modeling.",
+  "requestFramePermissions": []
+}
