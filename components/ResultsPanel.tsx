@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import {
   LineChart,
@@ -189,6 +190,14 @@ const ResultsPanel: React.FC<ResultsPanelProps> = ({ result, params, language })
               </div>
 
               <div>
+                 {/* Base Speed Section */}
+                 <p className="font-semibold text-xs text-gray-500 uppercase mb-1">{t.baseSpeedFormula}</p>
+                 <div className="space-y-2 mb-4 border-b border-gray-200 pb-3">
+                   <p>ω<sub>base</sub> ≈ V<sub>lim</sub> / ψ<sub>total</sub></p>
+                   <p className="text-xs text-gray-600">ψ<sub>total</sub> = √[(L<sub>q</sub>i<sub>q</sub>)² + (L<sub>d</sub>i<sub>d</sub>+ψ<sub>f</sub>)²]</p>
+                   <p className="text-xs text-gray-400">i<sub>d</sub>, i<sub>q</sub> @ I<sub>max</sub> (MTPA)</p>
+                 </div>
+
                  <p className="font-semibold text-xs text-gray-500 uppercase mb-1">{t.maxSpeedTheory}</p>
                  {enableFluxWeakening ? (
                     <div className="space-y-2 bg-blue-50 p-2 rounded">
